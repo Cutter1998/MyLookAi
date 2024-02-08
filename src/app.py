@@ -28,7 +28,7 @@ def download_png(url, filename):
 def index():
     return render_template('index.html')
 
-@app.route('/convert', methods=['POST'])
+@app.route('/gen_picture_of_user', methods=['POST'])
 def convert():
     user_description = {}
     user_description["gender"] = request.form['gender']
