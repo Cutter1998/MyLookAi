@@ -1,6 +1,6 @@
 # MyLookAi
 
-Generate an image of yourself wearing a specified or random outfit, then have our AI assistant find similar real-life items of clothing online for you to select from.
+Generate an image of a model wearing a specified outfit
 
 Instructions
 ============
