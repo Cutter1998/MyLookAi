@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyLookAi</title>
+    <title>MyFashionIcon</title>
     <link rel="stylesheet" href="static/styling.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form action="/gen_picture_of_user" method="post">
-        <textarea placeholder="gender (man/woman)" name="gender" rows="1" cols="15"></textarea>
-        <textarea placeholder="age" name="age" rows="1" cols="15"></textarea>
-        <textarea placeholder="height (tall, regular, short)" name="height" rows="1" cols="15"></textarea>
-        <textarea placeholder="hair colour" name="hair_colour" rows="1" cols="15"></textarea>
-        <textarea placeholder="hair length (short, medium, long)" name="hair_length" rows="1" cols="15"></textarea>
-        <textarea placeholder="eye colour" name="eye_colour" rows="1" cols="15"></textarea>
-        <textarea placeholder="build" name="build" rows="1" cols="15"></textarea>
-        <textarea placeholder="race" name="race" rows="1" cols="15"></textarea>
+    <form action="/gen_picture_of_user" method="post" class="form-style">
+        <h1>Describe your Model and their Outfit</h1>
+        <h2>Leave blank if not applicable (e.g. long dress no legwear)</h2>
+        <div class="input-group">
+            <input type="text" placeholder="model desciption (e.g. athletic asian male)" name="model" />
+            <input type="text" placeholder="headwear (e.g. black baseball cap, green shades)" name="head" />
+            <input type="text" placeholder="torso (e.g. white shirt, silver necklace with blazer)" name="torso" />
+            <input type="text" placeholder="legs (e.g. ripped blue jeans)" name="legs" />
+            <input type="text" placeholder="feet (e.g. black combat boots)" name="shoes" />
+        </div>
         <input type="submit" value="Go">
     </form>
 </body>
